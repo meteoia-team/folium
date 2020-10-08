@@ -45,7 +45,10 @@ from folium.map import (
 from folium.raster_layers import TileLayer, WmsTileLayer
 from folium.vector_layers import Circle, CircleMarker, PolyLine, Polygon, Rectangle
 
-__version__ = get_versions()['version']
+# __version__ = get_versions()['version']
+__version__ = 'mia'
+
+
 del get_versions
 
 if tuple(int(x) for x in branca.__version__.split('.')[:2]) < (0, 3):

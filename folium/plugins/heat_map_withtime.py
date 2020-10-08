@@ -112,6 +112,7 @@ class HeatMapWithTime(Layer):
                         minOpacity: {{this.min_opacity}},
                         maxOpacity: {{this.max_opacity}},
                         scaleRadius: {{this.scale_radius}},
+                        blur:0,
                         useLocalExtrema: {{this.use_local_extrema}},
                         defaultWeight: 1,
                         {% if this.gradient %}gradient: {{ this.gradient }}{% endif %}
