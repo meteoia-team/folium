@@ -13,7 +13,7 @@ _default_js = [
     ('leaflet.timedimension.min.js',
      'https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js'),
     ('heatmap.min.js',
-     'https://cdn.jsdelivr.net/gh/meteoia-team/folium@master/folium/javascript/pa7_hm.min.js'), # MeteoIA
+     'https://cdn.jsdelivr.net/gh/meteoia-team/folium@master/folium/javascript/pa7_hm.min_v1.js'), # MeteoIA
      # 'https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/pa7_hm.min.js'),
     ('leaflet-heatmap.js',
      'https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/pa7_leaflet_hm.min.js'),
