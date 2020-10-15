@@ -113,7 +113,7 @@ class HeatMapWithTime(Layer):
                         minOpacity: {{this.min_opacity}},
                         maxOpacity: {{this.max_opacity}},
                         scaleRadius: {{this.scale_radius}},
-                        blur:0,
+                        blur: {{this.blur}},
                         useLocalExtrema: {{this.use_local_extrema}},
                         defaultWeight: 1,
                         {% if this.gradient %}gradient: {{ this.gradient }}{% endif %}
@@ -129,7 +129,7 @@ class HeatMapWithTime(Layer):
                  use_local_extrema=False, auto_play=False,
                  display_index=True, index_steps=1, min_speed=0.1,
                  max_speed=10, speed_step=0.1, position='bottomleft',
-                 overlay=True, control=True, show=True):
+                 overlay=True, control=True, show=True, blur=0):
         super(HeatMapWithTime, self).__init__(name=name, overlay=overlay,
                                               control=control, show=show)
         self._name = 'HeatMap'
@@ -150,7 +150,7 @@ class HeatMapWithTime(Layer):
         self.scale_radius = 'true' if scale_radius else 'false'
         self.use_local_extrema = 'true' if use_local_extrema else 'false'
         self.gradient = gradient
-
+        self.blur = blur
         # Time dimension settings.
         self.auto_play = 'true' if auto_play else 'false'
         self.display_index = 'true' if display_index else 'false'
